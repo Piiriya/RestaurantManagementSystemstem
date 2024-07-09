@@ -1,0 +1,108 @@
+03 Jul 2024 - 10:58:50.632 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Starting RestaurantManagementSystemUpdatedApplication using Java 17.0.11 on DESKTOP-TFLQNAK with PID 17960 (C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated)
+03 Jul 2024 - 10:58:50.646 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - No active profile set, falling back to 1 default profile: "default"
+03 Jul 2024 - 10:58:50.758 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\HP\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/HP/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+03 Jul 2024 - 10:58:50.758 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03 Jul 2024 - 10:58:50.759 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03 Jul 2024 - 10:58:52.259 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03 Jul 2024 - 10:58:52.291 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+03 Jul 2024 - 10:58:53.426 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+03 Jul 2024 - 10:58:53.433 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03 Jul 2024 - 10:58:53.433 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+03 Jul 2024 - 10:58:53.607 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03 Jul 2024 - 10:58:53.607 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2847 ms
+03 Jul 2024 - 10:58:53.864 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03 Jul 2024 - 10:58:54.102 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+03 Jul 2024 - 10:58:54.293 [restartedMain] INFO  o.h.s.integration.SpatialService - HHH80000001: hibernate-spatial integration enabled : true
+03 Jul 2024 - 10:58:54.325 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03 Jul 2024 - 10:58:54.476 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+03 Jul 2024 - 10:58:54.865 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+03 Jul 2024 - 10:58:54.898 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03 Jul 2024 - 10:58:54.961 [restartedMain] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+03 Jul 2024 - 10:58:55.410 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03 Jul 2024 - 10:58:55.423 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 10:58:55.795 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03 Jul 2024 - 10:58:56.383 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+03 Jul 2024 - 10:58:56.623 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: eff610d7-1ccf-4baa-af35-951a82917821
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+03 Jul 2024 - 10:58:56.789 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+03 Jul 2024 - 10:58:57.300 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path ''
+03 Jul 2024 - 10:58:57.576 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Started RestaurantManagementSystemUpdatedApplication in 7.56 seconds (JVM running for 9.596)
+03 Jul 2024 - 11:03:15.579 [http-nio-8089-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03 Jul 2024 - 11:03:15.579 [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03 Jul 2024 - 11:03:15.584 [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+03 Jul 2024 - 11:03:15.820 [http-nio-8089-exec-2] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [188] milliseconds.
+03 Jul 2024 - 12:39:05.132 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 12:39:05.206 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+03 Jul 2024 - 12:39:05.255 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+03 Jul 2024 - 12:39:05.692 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Starting RestaurantManagementSystemUpdatedApplication using Java 17.0.11 on DESKTOP-TFLQNAK with PID 17960 (C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated)
+03 Jul 2024 - 12:39:05.692 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - No active profile set, falling back to 1 default profile: "default"
+03 Jul 2024 - 12:39:06.556 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03 Jul 2024 - 12:39:06.560 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+03 Jul 2024 - 12:39:07.007 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+03 Jul 2024 - 12:39:07.008 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03 Jul 2024 - 12:39:07.008 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+03 Jul 2024 - 12:39:07.283 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03 Jul 2024 - 12:39:07.283 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1583 ms
+03 Jul 2024 - 12:39:07.365 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03 Jul 2024 - 12:39:07.387 [restartedMain] INFO  o.h.s.integration.SpatialService - HHH80000001: hibernate-spatial integration enabled : true
+03 Jul 2024 - 12:39:07.405 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+03 Jul 2024 - 12:39:07.437 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+03 Jul 2024 - 12:39:07.438 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03 Jul 2024 - 12:39:07.446 [restartedMain] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+03 Jul 2024 - 12:39:07.535 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03 Jul 2024 - 12:39:07.536 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 12:39:07.671 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03 Jul 2024 - 12:39:07.823 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+03 Jul 2024 - 12:39:07.930 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e0aa6ad1-04a6-48cb-8b61-4bf5ded77d8b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+03 Jul 2024 - 12:39:07.955 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+03 Jul 2024 - 12:39:08.031 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path ''
+03 Jul 2024 - 12:39:08.133 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Started RestaurantManagementSystemUpdatedApplication in 2.521 seconds (JVM running for 6020.152)
+03 Jul 2024 - 12:39:08.136 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+03 Jul 2024 - 12:39:29.087 [http-nio-8089-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03 Jul 2024 - 12:39:29.088 [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03 Jul 2024 - 12:39:29.091 [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+03 Jul 2024 - 12:54:47.708 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 12:54:47.713 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+03 Jul 2024 - 12:54:47.726 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+03 Jul 2024 - 12:54:47.886 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Starting RestaurantManagementSystemUpdatedApplication using Java 17.0.11 on DESKTOP-TFLQNAK with PID 17960 (C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated\target\classes started by HP in C:\Users\HP\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\RestaurantManagementSystem_updated)
+03 Jul 2024 - 12:54:47.888 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - No active profile set, falling back to 1 default profile: "default"
+03 Jul 2024 - 12:54:48.463 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03 Jul 2024 - 12:54:48.466 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+03 Jul 2024 - 12:54:48.645 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+03 Jul 2024 - 12:54:48.646 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03 Jul 2024 - 12:54:48.647 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+03 Jul 2024 - 12:54:48.698 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03 Jul 2024 - 12:54:48.700 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 806 ms
+03 Jul 2024 - 12:54:48.779 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03 Jul 2024 - 12:54:48.792 [restartedMain] INFO  o.h.s.integration.SpatialService - HHH80000001: hibernate-spatial integration enabled : true
+03 Jul 2024 - 12:54:48.801 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+03 Jul 2024 - 12:54:48.822 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+03 Jul 2024 - 12:54:48.823 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03 Jul 2024 - 12:54:48.828 [restartedMain] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+03 Jul 2024 - 12:54:48.862 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03 Jul 2024 - 12:54:48.863 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 12:54:48.990 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03 Jul 2024 - 12:54:49.134 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+03 Jul 2024 - 12:54:49.199 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 53ef5f68-f377-4f85-8822-5922a8dcfd1f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+03 Jul 2024 - 12:54:49.217 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+03 Jul 2024 - 12:54:49.266 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path ''
+03 Jul 2024 - 12:54:49.328 [restartedMain] INFO  c.e.d.RestaurantManagementSystemUpdatedApplication - Started RestaurantManagementSystemUpdatedApplication in 1.503 seconds (JVM running for 6961.347)
+03 Jul 2024 - 12:54:49.331 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+03 Jul 2024 - 12:54:51.048 [RMI TCP Connection(120)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+03 Jul 2024 - 12:54:51.075 [RMI TCP Connection(120)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+03 Jul 2024 - 12:54:51.076 [RMI TCP Connection(120)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+03 Jul 2024 - 12:54:51.083 [RMI TCP Connection(120)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
