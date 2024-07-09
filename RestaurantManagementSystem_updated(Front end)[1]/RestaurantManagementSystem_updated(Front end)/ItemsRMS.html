@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+  
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-table th, .item-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+}
+
+.item-table td {
+    color: #333;
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.item-table tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+</style>
+</head>
+<body>
+    <h2>Item Details</h2>
+
+    <table class="item-table">
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Name</th>
+                
+            </tr>
+        </thead>
+        <tbody id="item-list">
+            <!-- Item details will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Dummy data for demonstration
+        var itemData = [
+            { item_id: 1, category: 'Starter', price: 150.00, name: 'Spring Rolls' },
+            { item_id: 2, category: 'Starter', price: 120.00, name: 'Garlic Bread' },
+            { item_id: 3, category: 'Main Course', price: 350.00, name: 'Grilled Chicken'},
+            { item_id: 4, category: 'Main Course', price: 250.00, name: 'Veggie Burger' },
+            { item_id: 5, category: 'Main Course', price: 400.00, name: 'Butter Paneer'},
+            { item_id: 6, category: 'Desserts', price: 200.00, name: 'Chocolate Cake' },
+            { item_id: 7, category: 'Desserts', price: 180.00, name: 'Ice Cream'},
+            { item_id: 8, category: 'Beverage', price: 100.00, name: 'Coke' },
+            { item_id: 9, category: 'Beverage', price: 130.00, name: 'Lemonade' },
+            { item_id: 10, category: 'Beverage', price: 150.00, name: 'Coffee' }
+        ];
+
+        // Function to render item table
+        function renderItemTable() {
+            var itemList = document.getElementById('item-list');
+            itemList.innerHTML = ''; // Clear existing table rows
+
+            itemData.forEach(function(item) {
+                var row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.item_id}</td>
+                    <td>${item.category}</td>
+                    <td>${item.price}</td>
+                    <td>${item.name}</td>
+                    
+                `;
+                itemList.appendChild(row);
+            });
+        }
+
+        // Render item table on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderItemTable();
+        });
+    </script>
+</body>
+</html>

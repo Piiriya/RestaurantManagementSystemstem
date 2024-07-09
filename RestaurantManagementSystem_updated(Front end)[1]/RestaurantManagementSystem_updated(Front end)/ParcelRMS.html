@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.bill-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eaf7ea;
+    border: 1px solid #a3d8a5;
+    border-radius: 4px;
+    color: #4b944b;
+}
+
+.bill-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f3e8;
+    border: 1px solid #a3d8a5;
+    border-radius: 4px;
+    color: #4b944b;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h2>Place Parcel Order</h2>
+        <form id="parcel-form">
+            <div class="form-group">
+                <label for="parcel-id">Parcel ID:</label>
+                <input type="text" id="parcel-id" name="parcelId" required>
+            </div>
+            <div class="form-group">
+                <label for="item-id">Item ID:</label>
+                <select id="item-id" name="itemId" required>
+                    <!-- Options will be dynamically added here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customer-id">Customer ID:</label>
+                <input type="text" id="customer-id" name="customerId" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="order-id">Order ID:</label>
+                <input type="text" id="order-id" name="orderId" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" value="YYYY-MM-DD HH:MM:SS" required>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="message"></div>
+
+        <div id="final-bill" class="bill-section">
+            <h3>Final Bill</h3>
+            <p id="bill-details">Please place an order to generate the final bill.</p>
+        </div>
+    </div>
+
+
+    <script>
+        // Dummy item data for dropdown options
+        var itemData = [
+            { item_id: 1, name: 'Spring Rolls' },
+            { item_id: 2, name: 'Garlic Bread' },
+            { item_id: 3, name: 'Grilled Chicken' },
+            { item_id: 4, name: 'Veggie Burger' },
+            { item_id: 5, name: 'Butter Paneer' },
+            { item_id: 6, name: 'Chocolate Cake' },
+            { item_id: 7, name: 'Ice Cream' },
+            { item_id: 8, name: 'Coke' },
+            { item_id: 9, name: 'Lemonade' },
+            { item_id: 10, name: 'Coffee' }
+        ];
+
+        // Function to populate item dropdown
+        function populateItemDropdown() {
+            var select = document.getElementById('item-id');
+
+            itemData.forEach(function(item) {
+                var option = document.createElement('option');
+                option.value = item.item_id;
+                option.textContent = item.name;
+                select.appendChild(option);
+            });
+        }
+
+        // Function to handle form submission
+        document.getElementById('parcel-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var parcelId = document.getElementById('parcel-id').value;
+            var itemId = document.getElementById('item-id').value;
+            var customerId = document.getElementById('customer-id').value;
+            var amount = document.getElementById('amount').value;
+            var orderId = document.getElementById('order-id').value;
+            var time = document.getElementById('time').value;
+
+            // Simulate order placement (replace with actual backend logic)
+            // For demonstration, simply show a success message and display final bill
+            var messageElement = document.getElementById('message');
+            messageElement.textContent = `Order placed successfully for Parcel ID: ${parcelId}`;
+
+            var billDetailsElement = document.getElementById('bill-details');
+            billDetailsElement.innerHTML = `
+                <strong>Parcel ID:</strong> ${parcelId}<br>
+                <strong>Total Amount:</strong> $${amount}<br>
+                <strong>Time of Order:</strong> ${time}
+            `;
+            
+            // Clear form fields after submission
+            document.getElementById('parcel-form').reset();
+        });
+
+        // Populate item dropdown on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            populateItemDropdown();
+        });
+    </script>
+</body>
+</html>

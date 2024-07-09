@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        .registration-form {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          background-color: white;
+        }
+    
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+    
+        .registration-form input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+        }
+    
+        .success-message {
+          display: none;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          margin-top: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="registration-form">
+        <h2>admin Login Form</h2>
+        <form id="registration-form" method="post" action="#">
+          <input type="text" name="Admin Id" placeholder="Give Admin Id" required>
+          <input type="password" name="Password" placeholder="Give Password" required>
+          <input type="submit" value="Login">
+        </form>
+        <div class="success-message" id="success-message">
+          Admin Logged in Successfully!
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+          event.preventDefault(); 
+          var form = event.target;
+          var successMessage = document.getElementById('success-message');
+          successMessage.style.display = 'block';
+          form.reset(); 
+        });
+      </script>
+        </style>
+       

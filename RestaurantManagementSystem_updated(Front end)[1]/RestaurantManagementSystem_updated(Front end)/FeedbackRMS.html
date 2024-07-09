@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+    background-color: #fae0ff;
+    margin: 50px;
+
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #a44caf4d;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: inset -1px -2px 15px 5px #c18ac8;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #790759;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a4054;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="Feedback">Feedback ID</label>
+        <input type="text" id="Feedback" name="Feedback" required>
+
+        <label for="Rating">Staff Rating</label>
+        <input type="text" id="Rating" name="Feedback" required>
+
+        <label for="comments">item rating</label>
+        <input id="comments" name="comments" required></input>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>

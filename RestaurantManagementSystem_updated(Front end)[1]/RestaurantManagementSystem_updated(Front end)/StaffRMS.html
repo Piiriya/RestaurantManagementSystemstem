@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .staff-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .staff-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .staff-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .staff-item:last-child {
+            border-bottom: none;
+        }
+
+        .staff-item span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="staff-container">
+        <h2>Staff List</h2>
+        <ul class="staff-list" id="staff-list">
+            <!-- Staff details will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        // Dummy data for demonstration
+        var staffData = [
+            { id: 1, name: 'Rajesh Kumar', rating: 4, email: 'rajesh.kumar@example.com' },
+            { id: 2, name: 'Priya Sharma', rating: 3, email: 'priya.sharma@example.com' },
+            { id: 3, name: 'Amit Patel', rating: 5, email: 'amit.patel@example.com' },
+            { id: 4, name: 'Anjali Gupta', rating: 4, email: 'anjali.gupta@example.com' },
+            { id: 5, name: 'Vikram Singh', rating: 4, email: 'vikram.singh@example.com' }
+        ];
+
+        // Function to render staff list
+        function renderStaffList() {
+            var staffList = document.getElementById('staff-list');
+            staffList.innerHTML = ''; // Clear existing list items
+
+            staffData.forEach(function(staff) {
+                var listItem = document.createElement('li');
+                listItem.classList.add('staff-item');
+                listItem.innerHTML = `
+                    <span>Name:</span> ${staff.name}<br>
+                    <span>Rating:</span> ${staff.rating}<br>
+                    <span>Email:</span> ${staff.email}<br>
+                `;
+                staffList.appendChild(listItem);
+            });
+        }
+
+        // Render staff list on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderStaffList();
+        });
+    </script>
+</body>
+</html>
